@@ -19,9 +19,9 @@ extern int scope[2][2];
 extern int enable_break;
 extern int judge();
 
-struct ACM evaluator;
-struct Queue available;
-struct LinkedList history[8];
+struct ACM evaluator;			/* 用于评估函数计算的AC自动机 */
+struct Queue available;			/* 按经验排序的初始空子序列 */
+struct LinkedList history[8];	/* 每一层启发式优化的空子序列 */
 int sign[3];
 
 void init_bot()

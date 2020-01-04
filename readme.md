@@ -28,8 +28,8 @@ gcc --std=c99 -O3 *.c -o five
 
 ## Algorithms
 1. `acm.c`: AC自动机（用于模式匹配），用于评分函数和禁手判断
-2. `bot.c`: AI实现
+2. `bot.c`: AI实现（博弈搜索+AlphaBeta剪枝）
 3. `five.c`: 程序入口
-4. `game.c`: 游戏逻辑
+4. `game.c`: 游戏逻辑（模式逻辑，交互，输赢判断）
 5. `scores.h`: 评分表
 6. `utilities.h`: 包含队列和双向链表的实现，用于启发式优化
