@@ -13,7 +13,8 @@ struct ACM
     struct TrieNode *root;
 };
 
-void ACM_init(struct ACM *acm);
+// AC自动机接口
+void ACM_init(struct ACM *acm);	
 void ACM_insert(struct ACM *acm, char *s, int val, int tag, int is_rev);
 void ACM_build_fail(struct ACM *acm);
 int ACM_query_rating(struct ACM *acm, int player, int x, int y, int x1, int y1, int dx, int dy);

@@ -6,6 +6,7 @@
 #define N 15					// chessboard size
 #define INF 0x3f3f3f3f
 
+// 模式常量
 #define MODE_NUM 6
 #define MODE_HH 0
 #define MODE_HC 1
@@ -17,6 +18,7 @@
 #define BLACK 1
 #define WHITE 2
 
+// 结果常量
 #define INVALID 0
 #define VALID 3
 #define BLACK_WIN 1
@@ -24,22 +26,26 @@
 #define BREAK_RULE 4
 #define TIE 5
 
+// 匹配串的字符常量
 #define CHARSET_SIZE 4
 #define EMPTY 0
 #define PLAYER 1
 #define OPPONENT 2
-#define BORDER 3
+#define BORDER 3				/* 边界 */
 
+//匹配串的通配符常量
+#define NO_BLACK 'B'			/* 不能是黑子 */
+#define NO_WHITE 'W'			/* 不能是白子 */
+#define NO_EMPTY_BLACK 'L'		/* 不能是黑子或空子 */
+#define NO_EMPTY_WHITE 'H'		/* 不能是白子或空子 */
+#define ANYTHING 'A'			/* 任意 */
+
+
+// 特征常量
 #define TAGS_SIZE 4
-#define LIVE3 1
-#define LIVE4 2
-#define LONG 3
-
-#define NO_BLACK 'B'
-#define NO_WHITE 'W'
-#define NO_EMPTY_BLACK 'L'
-#define NO_EMPTY_WHITE 'H'
-#define ANYTHING 'A'
+#define LIVE3 1					/* 活三 */
+#define LIVE4 2					/* 活四 */
+#define LONG 3					/* 长连 */
 
 #define ll long long
 #define ull unsigned long long
